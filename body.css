@@ -1,11 +1,12 @@
 /* Estilos generales */
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(241, 240, 240);
     font-family:'Roboto Slab', serif;
     line-height: 1.5;
     margin: 0;
@@ -25,6 +26,7 @@ body {
   
   
   h1, h2, h3, h4, h5, h6 {
+    display: block;
     align-items: center;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
@@ -35,12 +37,31 @@ body {
 
 
 header {
+  height: 15%;
+  padding: 1em;
   display: block;
   block-size: auto;
   background-color: #556b2f;
-  color: #fff;
+  color: rgb(241, 240, 240);
   
 }
+
+
+
+img {
+  max-width: 70%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.spacer {
+  height: 2rem;
+}
+
 
 .logo {
   padding-top: 50px;
@@ -53,13 +74,25 @@ header {
 }
 
 .logo img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
+
+#video {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.show-video #video {
+display:inline-block;  
+
+}
+
    
   /* Estilos de encabezado */
   header {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(241, 240, 240);
     color: rgb(171, 202, 154);
     padding: 20px;}
   
