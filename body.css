@@ -1,124 +1,172 @@
 /* Estilos generales */
 
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #canvas, #canvas * {
+    visibility: visible;
+  }
+  #canvas {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 1200px;
+    height: 1200px;
+  }
+}
+
+button{
+  width: 70px;
+    height: 23px;
+}
+
+.page-container {
+   text-align: center;
+   align-items: center;
+   max-width: 100px;
+   padding: 0 10px;
+   text-align: center;
+  margin: 0 auto;}
+
+
+@media screen and (max-width: 600px) {
+  .page-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    background-color: rgb(241, 240, 240);
-    font-family:'Roboto Slab', serif;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    
-
-  }
-  h1 {
-    text-align: center;
-    font-family:'Roboto Slab', serif;
-
-
-    
-  }
-  
-
-  
-  
-  h1, h2, h3, h4, h5, h6 {
-    display: block;
-    align-items: center;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;}
-
-  
-
-
-header {
-  height: 15%;
-  padding: 1em;
-  display: block;
-  block-size: auto;
-  background-color: #556b2f;
-  color: rgb(241, 240, 240);
-  
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
 }
 
 
 
-img {
-  max-width: 70%;
+.header {
+  background-image: url("titlemandal.png");
+  background-size: cover;
+  height: 400px;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    max-width: 100%;
+  }
+}
+
+header img {
+  width: 50%;
   height: auto;
+  background-size: cover;
+  padding: 50px;
+
 }
-
-h1 {
-  font-size: 2rem;
-  margin: 1rem 0;
-}
-
-.spacer {
-  height: 2rem;
-}
-
-
-.logo {
-  padding-top: 50px;
+p{
+  text-align: center;
+  height: 4em;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: smaller;
+  width: 50%;
+  padding-top: 15px;
+}
+
+p:first-child {
+  margin-bottom: 50px;
+}
+
+
+.image-container {
+  display: inline-block;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 140px;
+  padding: 50px;
+
+  
+
+}
+  
+
+img {
   max-width: 100%;
-  height: auto;
-}
+  max-height: 100%;
+  object-fit: contain;
 
-.logo img {
-  max-width: 80%;
-  height: auto;
-}
-
-#video {
-  display: none;
-  width: 100%;
-  height: auto;
-}
-
-.show-video #video {
-display:inline-block;  
 
 }
 
-   
-  /* Estilos de encabezado */
-  header {
-    background-color: rgb(241, 240, 240);
-    color: rgb(171, 202, 154);
-    padding: 20px;}
+
+
+
+select{
+  height: 20px;
+  width: 70px;
+  font-size: smaller;
+
+}
+
+.container {
+  display: block;
+  grid-template-rows: 1fr auto;
+  gap: 10px;
+}
+
+.controls-container {
+  display: block;
+  align-items: center;
+  gap: 5px;
+  margin-left: 0px;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-left: 0px;
+  align-items: center;
+
+}
+
+input[type="color"] {
+  height: 40px;
+  width: 40px;
+  border: none;
+  align-items: center;
+
+}
+
+input[type="range"] {
+  width: 100px;
+  border: none;
+}
+
+
   
-    .spacer {
-      height: 50px;}
-  /* Estilos responsivos */
-  @media only screen and (min-width: 768px) {
-    body {
-      align-items: center;
-      
-    }
-    
-     h2, h3, h4, h5, h6 {
-      font-size: smaller;
-    }}
 
-  a {
-    display: inline-block;
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: small;
-  }
-  
 
-  
+A{
+  display: flex;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: smaller;
+  display: block; 
+  margin-top: 10px;
+}
+
+
