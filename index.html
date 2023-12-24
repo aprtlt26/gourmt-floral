@@ -1,39 +1,263 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <title>Pedidos de Pizza Online</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="body.css">  
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="logo.jpeg"  alt="LogoGourmetFloral">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="logogr.jpg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+      /* Estilo del botón */
+      .boton-verde {
+        display: inline-block;
+        padding: 6px 20px;
+        background-color: #60ffb5; /* Color verde */
+        color: #ffffff; /* Texto en color blanco */
+        text-decoration: none; /* Sin subrayado */
+        border-radius: 5px; /* Bordes redondeados */
+        font-weight: bold; /* Texto en negrita */
+      }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container text-center">
+
+        <header>
+            <div class="logo">
+
+                <div id="video-container">
+                  <video id="video-background" style= width:1035px height=415px autoplay loop muted>
+                    <source src="portdvid.mp4"  type="video/mp4">
+                  </video>
+
+                  <div class="container">
+
+                  <a href="https://www.youtube.com/channel/UCeelmwsHupGjU1SkTiLnvLw" target="_blank">
+                    <img src="yutub.jpeg" style="height: 60px;"  alt="Icono de YouTube">
+                  </a>
+
+                  <a href="https://www.instagram.com/tu_nombre_de_usuario/" target="_blank"></a>
+                  <img src="insta.jpeg" style="height: 60px;"  alt="Icono de YouTube">
+
+                  </a>
+                  
+                  <a href="https://wa.me/+573160533996" target="_blank" alt="Mi WhatsApp">
+                    <img src="icow.jpg" style="width:40px", height= 60px alt="Enlace de WhatsApp"></a>
+
+            <div class="container">
+
+
+            <h1>¡Pedidos en línea!</h1>
+        </header>
+
+
+        <div class="container">
+            <p><em>Listas para hornear o congelar en casa</em></p>  
+            <img src="2.jpg" style= width:1035px alt="Flyer">
+            <div> 
+                <h1><em>Pedido mínimo de 3 pizzas</em></h1>
+                <h1><em>Costo por pizza 10.000</em></h1>
+                <h5><em>En zona norte 35.000 con domicilio, general 40.000 con domicilio, si supera los 12.000 pagas el excedente</em></h5>
+
+                <div class= "boton-verde"> 
+                <a href="https://api.whatsapp.com/send?phone=573160533996&text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer" >Pide Aquí</a>
+
+            </div>
+            <div class="spacer"></div>
+
+
+       
+            <div class="spacer"></div>
+
+
+            <img src="3.jpg" style= width:1035px >
+
+          
+            <canvas id="canvas" width=1035px height= 420px></canvas>
+
+            <div class="no-print">
+
+            <input type="color" id="color-picker" />
+            <input type="range" min="3" max="10" value="5" id="radius" />
+             <button onclick="printMandala()">Print</button>
+
+
       </div>
-      <button id="btn-play">Ver presentación</button>
-      <h1>¡pedidos en línea!</h1>
-      
-    </header>
-
-    <video id="video" src="Amanecergourmetf.mp4" width="640" height="360"c></video>
-
   
+      <audio id="audio" src="audio1.mp3"></audio>
 
-     <p>  <em>  Listas para hornear o congelar en casa </em> </p>  
-    <img src="menu.jpeg" alt="flyer">
-    <div> 
-      <h1> <em> Pedido mínimo de 3 pizzas </em></h1>
-      <h1> <em> Costo por pizza 10.000</em></h1>
-      <h5> <em> En zona norte 35.000 con domicilio, general 40.000 con domicilio, si supera los 12.000 pagas el excedente</em></h5>
-      <a href="https://api.whatsapp.com/send?phone=573160533996&text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer"> WhatsApp</a>
+
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
+
+            <div class="container">
+              <iframe width="205" height="415" src="https://www.youtube.com/embed/4e97xSJo658?si=SmN1rroTkyPZBlPu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+              <iframe width="205" height="415" src="https://www.youtube.com/embed/KVXDmRJmjaw?si=OenARNq9Os2nVbwK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+            <div class="spacer"></div>
+            <p>®GourmetFloral2019</p>
+
+            <section> 
+                <p><small>Desing and Develop by <a href="https://alfonsopretelt.com/">Vitalsphere Studio®</a></small></p>
+            </section>
+        </div>
+        
+
+        <div class="pie"></div>
+
     </div>
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-    <img src="margarita.jpeg" alt="pizza">
-    <div class="spacer"></div>
-    <p> ®GourmeFloral2019 </p>
 
+    <div id="cookie-banner">
+        <p>Este sitio web utiliza cookies. Al continuar navegando, aceptas el uso de cookies.</p>
+        <button onclick="acceptCookies()">Aceptar</button>
+    </div>
+
+     
   
-    <script src="script.js"></script>
+
+
+    <script>
+      function acceptCookies() {
+          // Establecer una cookie con nombre "cookiesAccepted" y valor "true" que expire en 30 días
+          document.cookie = "cookiesAccepted=true; expires=" + getCookieExpiration(30);
+          
+          // Ocultar el banner de cookies
+          document.getElementById("cookie-banner").style.display = "none";
+      }
+
+      function getCookieExpiration(days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          return date.toUTCString();
+      }
+
+      function checkCookiesAccepted() {
+          var cookiesAccepted = getCookieValue("cookiesAccepted");
+          if (!cookiesAccepted) {
+              document.getElementById("cookie-banner").style.display = "block";
+          }
+      }
+
+      function getCookieValue(name) {
+          var cookies = document.cookie.split(';');
+          for (var i = 0; i < cookies.length; i++) {
+              var cookie = cookies[i].trim();
+              if (cookie.startsWith(name + "=")) {
+                  return cookie.substring(name.length + 1);
+              }
+          }
+          return null;
+      }
+
+      // Comprobar si las cookies han sido aceptadas al cargar la página
+      window.onload = checkCookiesAccepted;
+
+      function printMandala() {
+  window.print();
+}
+
+
+
+      if ('userAgentData' in navigator) {
+        const platform = navigator.userAgentData.platform;
+        const brands = navigator.userAgentData.brands;
+        console.log('Platform:', platform);
+        console.log('Brands:', brands);
+      } else {
+        const userAgent = navigator.userAgent;
+        console.log('User Agent:', userAgent);
+      }
+
+      const images = ['pizzapint.jpg'];
+const audios = ['audio1.mp3', 'audio2.mp3', 'audio3.mp3',];
+
+const randomIndex = Math.floor(Math.random() * images.length);
+const randomImage = images[randomIndex];
+const randomAudio = audios[randomIndex];
+
+const canvas = document.getElementById('canvas');
+const context = canvas.getContext('2d');
+const image = new Image();
+image.src = randomImage;
+// Coloca la ruta correcta hacia la imagen
+image.onload = function() {
+  context.drawImage(image, 0, 0, canvas.width, canvas.height);
+};
+
+const audio = document.getElementById('audio');
+audio.src = randomAudio;
+
+
+     
+
+      const colorPicker = document.getElementById('color-picker');
+      let painting = false;
+
+
+
+
+      function startPainting() {
+        painting = true;
+        audio.play();
+      }
+
+      function stopPainting() {
+        painting = false;
+      }
+  
+      function paint(event) {
+  if (!painting) return;
+  context.beginPath();
+  context.fillStyle = colorPicker.value;
+  const radius = document.getElementById('radius').value;
+
+
+  // Obtener las coordenadas del canvas
+  const rect = canvas.getBoundingClientRect();
+  const scaleX = canvas.width / rect.width;
+  const scaleY = canvas.height / rect.height;
+
+  if (event.touches) {
+    // Ajustar la posición del puntero con las coordenadas del canvas
+    context.arc((event.touches[0].clientX - rect.left) * scaleX, (event.touches[0].clientY - rect.top) * scaleY, radius, 0, 2 * Math.PI);
+  } else {
+    context.arc(event.offsetX, event.offsetY, radius, 0, 2 * Math.PI);
+  }
+
+  context.fill();
+}
+
+
+
+      canvas.addEventListener('mousedown', startPainting);
+      canvas.addEventListener('mouseup', stopPainting);
+      canvas.addEventListener('mousemove', paint);
+      canvas.addEventListener('touchstart', startPainting, {passive: false});
+      canvas.addEventListener('touchend', stopPainting, {passive: false});
+      canvas.addEventListener('touchmove', paint, {passive: false});
+      canvas.addEventListener('touchmove', function(event) {
+  event.preventDefault();
+  const rect = canvas.getBoundingClientRect();
+  const x = event.touches[0].clientX - rect.left;
+  const y = event.touches[0].clientY - rect.top;
+  paint(x, y);
+}, {passive: false});
+
+
+
+
+      
+    
+  </script>
   </body>
-</html>
+  </html>
+
