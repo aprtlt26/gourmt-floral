@@ -4,63 +4,260 @@
     <title>Pedidos de Pizza Online</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" href="logogr.jpg" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9130621743704423"
-     crossorigin="anonymous"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+   
     <style>
-      /* Estilo del botón */
-      .boton-verde {
-        display: inline-block;
-        padding: 6px 20px;
-        background-color: #60ffb5; /* Color verde */
-        color: #ffffff; /* Texto en color blanco */
-        text-decoration: none; /* Sin subrayado */
-        border-radius: 5px; /* Bordes redondeados */
-        font-weight: bold; /* Texto en negrita */
-      }
+    
+    /* Establecer la fuente y el color de fondo para el cuerpo del sitio web */
+/* Establecer la fuente y el color de fondo para el cuerpo del sitio web */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'Press Start 2P', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(213, 213, 213);
+}
 
-      body {
-        text-align: center;
-      }
+/* Estilo del encabezado */
+header {
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    border-radius: 8px;
+    box-shadow: 0 0 20px #ffffff, 0 0 30px #00ff00, 0 0 40px #ffffff; /* Luminiscencia */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 650px;
+    text-align: center;
+}
 
-      .container {
-        margin: auto;
-      }
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
 
-      /* Estilo del video */
-      #video-container {
-        position: relative;
+/* Estilo de la sección principal */
+section {
+    margin-top: 100px;
+    text-align: justify;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+}
+
+/* Texto */
+p {
+    color: #d8d6d6;
+    text-align: center;
+}
+
+p em {
+    color: #d7ad4c;
+    text-shadow: 1px 1px 2px #040404, 0 0 5px #d2d2d2;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: -50px;
+}
+
+/* Estilo del botón */
+
+
+.boton-verde1 a {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 12px;
+    color: #151b1e;
+    background-color: #7f48f597;
+    text-shadow: 1px 1px 2px #d8d6d6, 0 0 5px #00ff00;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(246, 246, 246, 0.3);
+    transition: all 0.3s ease-in-out;
+    border-style: dashed;
+    border-color: #00ff00;
+    border-radius: 8px;
+    position: relative;
+    top: 90px;
+}
+
+.boton-verde a {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 12px;
+    color: #151b1e;
+    background-color: #7f48f597;
+    text-shadow: 1px 1px 2px #d8d6d6, 0 0 5px #00ff00;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(246, 246, 246, 0.3);
+    transition: all 0.3s ease-in-out;
+    border-style: dashed;
+    border-color: #00ff00;
+    border-radius: 8px;
+    position: relative;
+    top: 1500px;
+}
+
+.boton-verde a:hover {
+    background-color: #00cc00;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+}
+
+/* Animación de parpadeo */
+@keyframes neon-blink {
+    0%, 100% {
+        box-shadow: 0 0 10px #60ffb5, 0 0 20px #60ffb5, 0 0 30px #60ffb5;
+    }
+    50% {
+        box-shadow: 0 0 20px #ffffff, 0 0 30px #878484, 0 0 40px #60ffb5;
+    }
+}
+
+/* Estilo del iframe del juego */
+#gameIframe {
+    border-style: dashed;
+    border-color: #00ff00;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.914), 2px 2px 15px rgba(255, 249, 249, 0.966);
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Encabezado del juego */
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Monoton', cursive;
+    font-size: 36px;
+    color: #00ffd0;
+    text-shadow: 1px 1px 2px #171717, 0 0 5px #00ff00;
+    margin-left: 20px;
+    border-style: dashed;
+    border-color: #00ff00;
+    border-radius: 8px;
+    width: 50%;
+    margin-top: 170px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.914), 2px 2px 15px rgba(255, 249, 249, 0.966);
+}
+
+/* Iconos de redes sociales */
+#icon-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    top: 180px;
+}
+
+#icon-container img {
+    height: 60px;
+    transition: transform 0.3s ease;
+    background-color: #ffffffc1;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.914), 2px 2px 15px rgba(255, 249, 249, 0.966);
+}
+
+#icon-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Pie de página */
+.footer {
+    display: flex;
+    color: #05c8a5;
+    text-shadow: #040404;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 80px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Responsividad adicional para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
         width: 100%;
-        overflow: hidden;
-      }
+    }
 
-      #video-background {
-        width: 100%;
-        height: auto;
-      }
+    h1 {
+        font-size: 28px;
+        margin-left: 0;
+        width: 70%;
+    }
 
-      /* Estilo de las imágenes y videos */
-      img, iframe {
-        max-width: 100%;
-        height: auto;
-      }
+    .boton-verde {
+        font-size: 10px;
+        padding: 5px 15px;
+    }
 
-      /* Estilo del canvas */
-      #canvas {
-        max-width: 100%;
-        height: auto;
-      }
+    #gameIframe {
+        margin-top: 10px;
+    }
 
-      /* Estilo del pie de página */
-      .pie {
-        height: 50px; /* Ajusta según sea necesario */
-      }
+    .footer {
+        font-size: 10px;
+    }
+
+    #icon-container img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+        margin-top: 100px;
+        width: 80%;
+    }
+
+    p em {
+        font-size: 12px;
+        margin-top: -30px;
+    }
+
+    .boton-verde {
+        font-size: 8px;
+        padding: 4px 10px;
+    }
+
+    #icon-container img {
+        height: 40px;
+    }
+
+    .footer {
+        font-size: 8px;
+    }
+}
+
 
     </style>
 </head>
@@ -71,61 +268,75 @@
 
         <header>
           <div class="logo">
+            <div id="port">
+                <img src="portdvid.gif" alt="">
+            </div>
+        
+            <div id="icon-container">
+                <a href="https://www.instagram.com/gourmet_floral/" target="_blank">
+                    <img src="https://img.icons8.com/glyph-neue/64/instagram-new.png" id="icon" alt="Icono de Instagram">
+                </a>
+                <a href="https://wa.me/+573160533996" target="_blank">
+                    <img src="https://img.icons8.com/glyph-neue/64/whatsapp.png" id="icon" alt="Enlace de WhatsApp">
+                </a>
+                <a href="https://www.youtube.com/channel/UCeelmwsHupGjU1SkTiLnvLw" target="_blank">
+                    <img src="https://img.icons8.com/glyph-neue/64/youtube-play.png" id="icon" alt="Icono de YouTube">
+                </a>
+            </div>
+        </div>
+        
+          </header>
 
-            <div id="video-container">
-              <video id="video-background" autoplay loop muted>
-                <source src="portdvid.mp4" type="video/mp4">
-              </video>
+            
+    
+
+            <div class="boton-verde1"> 
+              <a href="https://api.whatsapp.com/send?phone=573160533996&text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">Pide Pizza</a>
             </div>
 
-            <a href="https://www.instagram.com/tu_nombre_de_usuario/" target="_blank">
-              <img src="insta.jpeg" style="height: 60px;" alt="Icono de Instagram">
-            </a>
-
-            <a href="https://wa.me/+573160533996" target="_blank" alt="Mi WhatsApp">
-              <img src="icow.jpg" style="width:40px; height: 60px;" alt="Enlace de WhatsApp">
-            </a>
-
-            <a href="https://www.youtube.com/channel/UCeelmwsHupGjU1SkTiLnvLw" target="_blank">
-              <img src="yutub.jpeg" style="height: 60px;" alt="Icono de YouTube">
-            </a>
-
-            <h1>¡Pedidos en línea!</h1>
+         
 
             <div class="boton-verde"> 
-              <a href="https://api.whatsapp.com/send?phone=573160533996&text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">Pide Aquí</a>
+              <a href="https://api.whatsapp.com/send?phone=573160533996&text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">Pide Pizza</a>
             </div>
+      
+          <h1>Gourmet Gamer!</h1>
 
-          </div>
-        </header>
-
-        <p><em>Listas para hornear o congelar en casa</em></p>  
-
-        <img src="2.jpg" style="width: 100%;" alt="Flyer">
-
-        <h1><em>Pedido mínimo de 3 pizzas</em></h1>
-        <h1><em>Costo por pizza 10.000</em></h1>
-        <h5><em>En zona norte 35.000 con domicilio, general 40.000 con domicilio, si supera los 12.000 pagas el excedente</em></h5>
-
-        <div class="boton-verde"> 
-          <a href="https://api.whatsapp.com/send?phone=573160533996&text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">Pide Aquí</a>
         </div>
 
-        <section>
+        <p>Juega en Linea y come pizza gratis!</p>  
+
+        <section style="width: 100%; max-width: 1200px; margin: auto; text-align: center;">
+          <!-- Incrustar la página del juego con un iframe -->
+          <iframe id="gameIframe" src="https://juegosapopizza.netlify.app/" style="width: 100%; height: 870px; border: dashed;
+          border-color: #00ff00; background-color: #040404;
+          border-radius: 8px;; "></iframe>
+      
+      </section>
+      
+      <p style="margin-top: 20px;">
+        <a href="https://juegosapopizza.netlify.app/" target="_blank" style="color: #e5e5e5; text-decoration: rgb(195, 135, 93); font-weight: bold;">
+            Abrir juego en página
+        </a>
+    </p>
+      
+
 
         </section>
         <div>
 
         </div>
-        <canvas id="canvas" width=1035px height= 420px></canvas>
+
+        <section></section>
+        <!--   <canvas id="canvas" width=1035px height= 420px></canvas>
 
         <div class="no-print">
-          <input type="color" id="color-picker" />
+          <input type="color" id="color-picker" /> 
           <input type="range" min="3" max="10" value="5" id="radius" />
           <button onclick="printMandala()">Print</button>
         </div>
 
-        <audio id="audio" src="audio1.mp3"></audio>
+        <audio id="audio" src="audio1.mp3"></audio> -->
 
 
 
@@ -133,56 +344,17 @@
          
             <section></section>
               <div class="video-container">
-        <img src="contac.jpg" style="width: 100%;" alt="Contacto">
+        <img src="contac.webp" style="width: 100%;" alt="Contacto">
 
-        <p>®GourmetFloral2019</p>
+        
+          <div class="footer">
+        <p>  GourmetFloral 2019 - Desing and Develop by <a href="https://alfonsopretelt.com/">Alfonso Pretelt</a></p>
 
-        <p><small>Desing and Develop by <a href="https://alfonsopretelt.com/">Vitalsphere Studio®</a></small></p>
+       </div>
 
-        <div class="pie"></div>
-
-    </div>
-
-    <div id="cookie-banner">
-        <p>Este sitio web utiliza cookies. Al continuar navegando, aceptas el uso de cookies.</p>
-        <button onclick="acceptCookies()">Aceptar</button>
-    </div>
-
-    <script>
-      function acceptCookies() {
-          // Establecer una cookie con nombre "cookiesAccepted" y valor "true" que expire en 30 días
-          document.cookie = "cookiesAccepted=true; expires=" + getCookieExpiration(30);
-          
-          // Ocultar el banner de cookies
-          document.getElementById("cookie-banner").style.display = "none";
-      }
-
-      function getCookieExpiration(days) {
-          var date = new Date();
-          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-          return date.toUTCString();
-      }
-
-      function checkCookiesAccepted() {
-          var cookiesAccepted = getCookieValue("cookiesAccepted");
-          if (!cookiesAccepted) {
-              document.getElementById("cookie-banner").style.display = "block";
-          }
-      }
-
-      function getCookieValue(name) {
-          var cookies = document.cookie.split(';');
-          for (var i = 0; i < cookies.length; i++) {
-              var cookie = cookies[i].trim();
-              if (cookie.startsWith(name + "=")) {
-                  return cookie.substring(name.length + 1);
-              }
-          }
-          return null;
-      }
-
-      // Comprobar si las cookies han sido aceptadas al cargar la página
-      window.onload = checkCookiesAccepted;
+    
+  
+<script>
 
       function printMandala() {
   window.print();
